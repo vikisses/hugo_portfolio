@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/portfolio/</loc>
+    <loc>http://localhost:1313/hugo_portfolio/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/portfolio/about/</loc>
+    <loc>http://localhost:1313/hugo_portfolio/about/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/portfolio/projects/</loc>
+    <loc>http://localhost:1313/hugo_portfolio/projects/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/portfolio/categories/</loc>
+    <loc>http://localhost:1313/hugo_portfolio/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/tags/</loc>
+    <loc>http://localhost:1313/hugo_portfolio/tags/</loc>
   </url>
 </urlset>

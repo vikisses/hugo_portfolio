@@ -1,6 +1,6 @@
 disableKinds = ["RSS"]
 
-baseURL = "https://vikisses.github.io/portfolio/"
+baseURL = "https://vikisses.github.io/hugo_portfolio/"
 languageCode = "ru-ru"
 title = "Portfolio"
 theme = "PaperMod"
