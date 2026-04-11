@@ -13,5 +13,5 @@ draft: false
 ## 3. Дизайн-проекты
 --------
 
-## 4. [HTTP (Протокол HTTP. Клиент-серверное взаимодействие)](/hugo_portfolio/content/http-lab/)
+## 4. [HTTP (Протокол HTTP. Клиент-серверное взаимодействие)](content/http-lab.md)
 --------
