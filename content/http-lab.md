@@ -23,7 +23,7 @@ GET /get HTTP/1.1
 Host: httpbin.org
 ```
 Ответ: сервер вернул статус 200 OK и JSON-данные с информацией о запросе.
-![Telnet GET]([/vikisses/hugo_portfolio/blob/main/static/images/curl_get.png](https://github.com/vikisses/hugo_portfolio/blob/main/static/images/curl_get.png))
+![Telnet GET](/vikisses/hugo_portfolio/blob/main/static/images/curl_get.png)
 
 ---
 
