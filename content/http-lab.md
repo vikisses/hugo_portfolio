@@ -7,54 +7,92 @@ date: 2026-04-11
 
 ---
 
-## 1. GET-запрос через netcat
+## 1. GET-запрос через Telnet
 
 ```bash
-ncat --ssl reqres.in 443
+telnet httpbin.org 80
 ```
 
 ```http
-GET /api/users/2 HTTP/1.1
-Host: reqres.in
+GET /get HTTP/1.1
+Host: httpbin.org
 ```
+Ответ: сервер вернул статус 200 OK и JSON-данные с информацией о запросе.
 
 ---
 
-## 2. POST-запрос через netcat
+## 2. POST-запрос через Telnet
 
 ```http
-POST /api/users HTTP/1.1
-Host: reqres.in
+POST /post HTTP/1.1
+Host: httpbin.org
 Content-Type: application/json
 Content-Length: 31
 
 {"name":"vika","job":"student"}
 ```
+Ответ: сервер вернул статус 200 OK и отправленные данные.
 
 ---
 
-## 3. GET-запрос через curl
+## 3. GET-запрос через cURL
 
 ```bash
-curl https://reqres.in/api/users/2
+curl https://httpbin.org/get
 ```
+Ответ: получен JSON с параметрами запроса.
 
 ---
 
 ## 4. POST-запрос через curl
 
 ```bash
-curl -X POST https://reqres.in/api/users \
+curl -X POST https://httpbin.org/post \
 -H "Content-Type: application/json" \
 -d '{"name":"vika","job":"student"}'
 ```
 
 ---
-
+Ответ:
+```xml
+<?xml version="1.0" encoding="windows-1251"?>
+<ValCurs ID="R01235" DateRange1="01.03.2025" DateRange2="10.03.2025" name="Foreign Currency Market Dynamic">
+    <Record Date="01.03.2025" Id="R01235">
+        <Nominal>1</Nominal>
+        <Value>88,2568</Value>
+        <VunitRate>88,2568</VunitRate>
+    </Record>
+    <Record Date="04.03.2025" Id="R01235">
+        <Nominal>1</Nominal>
+        <Value>89,2497</Value>
+        <VunitRate>89,2497</VunitRate>
+    </Record>
+    <Record Date="05.03.2025" Id="R01235">
+        <Nominal>1</Nominal>
+        <Value>89,2448</Value>
+        <VunitRate>89,2448</VunitRate>
+    </Record>
+    <Record Date="06.03.2025" Id="R01235">
+        <Nominal>1</Nominal>
+        <Value>89,7878</Value>
+        <VunitRate>89,7878</VunitRate>
+    </Record>
+    <Record Date="07.03.2025" Id="R01235">
+        <Nominal>1</Nominal>
+        <Value>89,5724</Value>
+        <VunitRate>89,5724</VunitRate>
+    </Record>
+    <Record Date="08.03.2025" Id="R01235">
+        <Nominal>1</Nominal>
+        <Value>89,1362</Value>
+        <VunitRate>89,1362</VunitRate>
+    </Record>
+</ValCurs>
+```
 ## 5. GET-запрос к API Банка России (Postman)
 
 ```text
-https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/03/2025&date_req2=10/03/2025&VAL_NM_RQ=R01235
+[https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/03/2025&date_req2=10/03/2025&VAL_NM_RQ=R01235](https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/03/2025&date_req2=10/03/2025&VAL_NM_RQ=R01235)
 ```
 
 ---
