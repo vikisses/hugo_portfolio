@@ -38,7 +38,7 @@ Content-Length: 31
 {"name":"vika","job":"student"}
 ```
 Ответ: сервер вернул статус 200 OK и отправленные данные.
-![Telnet POST](/images/telnet_post.png)
+![Telnet POST](https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/telnet_post.png)
 
 ---
 
@@ -48,7 +48,7 @@ Content-Length: 31
 curl https://httpbin.org/get
 ```
 Ответ: получен JSON с параметрами запроса.
-![curl GET](/images/curl_get.png)
+![curl GET](https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/curl_get.png)
 
 ---
 
@@ -98,7 +98,7 @@ curl -X POST https://httpbin.org/post \
     </Record>
 </ValCurs>
 ```
-![curl POST](/images/curl_post.png)
+![curl POST](https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/curl_post.png)
 
 ## 5. GET-запрос к API Банка России (Postman)  
 Офицальная документация API ЦБ: https://www.cbr.ru/development/sxml/  
@@ -112,9 +112,9 @@ API Центрального Банка: https://www.cbr.ru/scripts/XML_dynamic.
 ```text
 [https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/03/2025&date_req2=10/03/2025&VAL_NM_RQ=R01235](https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/03/2025&date_req2=10/03/2025&VAL_NM_RQ=R01235)
 ```
-![Postman](/images/load_postman.png)
-![Postman](/images/postman_menu.png)
-![Postman](/images/get_postman.png)
+![Postman](https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/load_postman.png)
+![Postman](https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/postman_menu.png)
+![Postman](https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/get_postman.png)
 
 
 ---
