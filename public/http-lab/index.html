@@ -17,7 +17,7 @@ telnet httpbin.org 80
 GET /get HTTP/1.1
 Host: httpbin.org
 Ответ: сервер вернул статус 200 OK и JSON-данные с информацией о запросе.
-
+![Telnet GET]({{ .Site.BaseURL }}images/telnet_get.png)
 
 2. POST-запрос через Telnet
 POST /post HTTP/1.1
@@ -27,11 +27,6 @@ Content-Length: 31
 
 {&#34;name&#34;:&#34;vika&#34;,&#34;job&#34;:&#34;student&#34;}
 Ответ: сервер вернул статус 200 OK и отправленные данные.
-
-
-3. GET-запрос через cURL
-curl https://httpbin.org/get
-Ответ: получен JSON с параметрами запроса.
 ">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/hugo_portfolio/http-lab/">
@@ -161,7 +156,7 @@ curl https://httpbin.org/get
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#a6e22e">GET</span> /get <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
 </span></span><span style="display:flex;"><span>Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">httpbin.org</span>
 </span></span></code></pre></div><p>Ответ: сервер вернул статус 200 OK и JSON-данные с информацией о запросе.
-<img alt="Telnet GET" loading="lazy" src="images/telnet_get.png"></p>
+![Telnet GET]({{ .Site.BaseURL }}images/telnet_get.png)</p>
 <hr>
 <h2 id="2-post-запрос-через-telnet">2. POST-запрос через Telnet<a hidden class="anchor" aria-hidden="true" href="#2-post-запрос-через-telnet">#</a></h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#a6e22e">POST</span> /post <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
