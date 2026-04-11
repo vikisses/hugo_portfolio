@@ -7,7 +7,9 @@ date: 2026-04-11
 
 ---
 
-Я выбирала сайт с ресурса - https://free-apis.github.io/#/browse. Мой выбор упал на - https://httpbin.org/. Выбрала его, т к он не требует API key 
+Я выбирала сайт с ресурса - https://free-apis.github.io/#/browse  
+Мой выбор упал на - https://httpbin.org/  
+Выбрала его, т к он не требует API key   
 
 ## 1. GET-запрос через Telnet
 
