@@ -60,6 +60,7 @@ curl -X POST https://httpbin.org/post \
 ```
 
 ---
+
 Ответ:
 ```xml
 <?xml version="1.0" encoding="windows-1251"?>
