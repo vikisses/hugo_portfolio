@@ -7,7 +7,6 @@ date: 2026-04-11
 
 ---
 
-## GET-запрос через Telnet
 Я выбирала сайт с ресурса - https://free-apis.github.io/#/browse. Мой выбор упал на - https://httpbin.org/. Выбрала его, т к он не требует API key 
 
 ## 1. GET-запрос через Telnet
@@ -21,7 +20,7 @@ GET /get HTTP/1.1
 Host: httpbin.org
 ```
 Ответ: сервер вернул статус 200 OK и JSON-данные с информацией о запросе.
-
+![Telnet GET](/images/telnet_get.png)
 ---
 
 ## 2. POST-запрос через Telnet
