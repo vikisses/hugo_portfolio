@@ -97,6 +97,13 @@ curl -X POST https://httpbin.org/post \
 ![curl POST](/images/curl_post.png)
 
 ## 5. GET-запрос к API Банка России (Postman)
+Офицальная документация API ЦБ: https://www.cbr.ru/development/sxml/
+API Центрального Банка: https://www.cbr.ru/scripts/XML_dynamic.asp
+Дата начала: date_req1=01/03/2025
+Дата конца: date_req2=10/03/2025
+Код валюты (доллар США): VAL_NM_RQ=R01235
+Запрос такой будет: курс доллара с 1 по 10 марта 2025
+
 
 ```text
 [https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/03/2025&date_req2=10/03/2025&VAL_NM_RQ=R01235](https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/03/2025&date_req2=10/03/2025&VAL_NM_RQ=R01235)
