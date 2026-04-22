@@ -15,3 +15,6 @@ draft: false
 
 ## 4. [HTTP (Протокол HTTP. Клиент-серверное взаимодействие)](/hugo_portfolio/http-lab/)
 --------
+
+## 5. [Создание проекта с использованием Webpack](/hugo_portfolio/webpack-lab/)
+--------
