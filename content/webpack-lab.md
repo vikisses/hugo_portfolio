@@ -62,9 +62,9 @@ module.exports = {
 };
 ```
 
-![Скриншот 1](/vikisses/hugo_portfolio/blob/main/static/images/Webpack_1.png)
+![Скриншот 1](https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/Webpack_1.png)
 
-![Скриншот 2](/vikisses/hugo_portfolio/blob/main/static/images/Webpack_2.png)
+![Скриншот 2](https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/Webpack_2.png)
 
 ---
 
@@ -100,7 +100,7 @@ module.exports = {
 Время выводится крупно с помощью классов Bootstrap.
 
 Внешний вид страницы после запуска:
-![Скриншот 3](/vikisses/hugo_portfolio/blob/main/static/images/Webpack_3.png)
+![Скриншот 3](https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/Webpack_3.png)
 
 
 ---
@@ -140,13 +140,13 @@ docker run -p 3000:3000 webpack-lab
 
 После запуска приложение становится доступно по адресу: http://localhost:3000/
 
-![Скриншот 4](/vikisses/hugo_portfolio/blob/main/static/images/Docker1.png)
+![Скриншот 4](https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/Docker1.png)
 
 Также в логах отображаются HTTP-запросы (GET / и GET /dist/main.js), что свидетельствует о корректной работе приложения внутри контейнера.
 
 При обновлении страницы в браузере появляются новые записи в логах, что подтверждает обработку запросов сервером.
 
-![Скриншот 5](/vikisses/hugo_portfolio/blob/main/static/images/Docker2.png)
+![Скриншот 5](https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/Docker2.png)
 
 
 ---
