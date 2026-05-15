@@ -1,0 +1,246 @@
+<!doctype html><html lang=en dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Интеграция Bootstrap 5 в приложение с luxon. Этап 2 | Portfolio</title><meta name=keywords content><meta name=description content='
+Лабораторная работа: Интеграция Bootstrap 5 в приложение с luxon. Этап 2
+
+1. Cкриншот с кодом html
+Код html:
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap + Luxon</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+
+      <div class="col-2"></div>
+
+      <div class="col-8">
+        <button
+          class="btn btn-danger btn-lg w-100"
+          data-bs-toggle="modal"
+          data-bs-target="#timeModal"
+        >
+          Показать время
+        </button>
+      </div>
+
+      <div class="col-2"></div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="timeModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Выполнила: Виктория Тарасова
+          </h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+
+        <div class="modal-body text-center">
+          <h1 id="hh"></h1>
+        </div>
+
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Закрыть
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./dist/main.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html>
+'><meta name=author content><link rel=canonical href=https://vikisses.github.io/hugo_portfolio/webpack-lab_2/><link crossorigin=anonymous href=/hugo_portfolio/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://vikisses.github.io/hugo_portfolio/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://vikisses.github.io/hugo_portfolio/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://vikisses.github.io/hugo_portfolio/favicon-32x32.png><link rel=apple-touch-icon href=https://vikisses.github.io/hugo_portfolio/apple-touch-icon.png><link rel=mask-icon href=https://vikisses.github.io/hugo_portfolio/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://vikisses.github.io/hugo_portfolio/webpack-lab_2/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="https://vikisses.github.io/hugo_portfolio/webpack-lab_2/"><meta property="og:site_name" content="Portfolio"><meta property="og:title" content="Интеграция Bootstrap 5 в приложение с luxon. Этап 2"><meta property="og:description" content=' Лабораторная работа: Интеграция Bootstrap 5 в приложение с luxon. Этап 2 1. Cкриншот с кодом html Код html:
+<!DOCTYPE html> <html lang="ru"> <head> <meta charset="UTF-8"> <title>Bootstrap + Luxon</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" > </head> <body> <div class="container mt-5"> <div class="row"> <div class="col-2"></div> <div class="col-8"> <button class="btn btn-danger btn-lg w-100" data-bs-toggle="modal" data-bs-target="#timeModal" > Показать время </button> </div> <div class="col-2"></div> </div> </div> <div class="modal fade" id="timeModal" tabindex="-1"> <div class="modal-dialog modal-dialog-centered"> <div class="modal-content"> <div class="modal-header"> <h5 class="modal-title"> Выполнила: Виктория Тарасова </h5> <button type="button" class="btn-close" data-bs-dismiss="modal" ></button> </div> <div class="modal-body text-center"> <h1 id="hh"></h1> </div> <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" > Закрыть </button> </div> </div> </div> </div> <script src="./dist/main.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script> </body> </html> '><meta property="og:locale" content="ru-ru"><meta property="og:type" content="article"><meta property="article:published_time" content="2026-05-15T00:00:00+00:00"><meta property="article:modified_time" content="2026-05-15T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Интеграция Bootstrap 5 в приложение с luxon. Этап 2"><meta name=twitter:description content='
+Лабораторная работа: Интеграция Bootstrap 5 в приложение с luxon. Этап 2
+
+1. Cкриншот с кодом html
+Код html:
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap + Luxon</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+
+      <div class="col-2"></div>
+
+      <div class="col-8">
+        <button
+          class="btn btn-danger btn-lg w-100"
+          data-bs-toggle="modal"
+          data-bs-target="#timeModal"
+        >
+          Показать время
+        </button>
+      </div>
+
+      <div class="col-2"></div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="timeModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Выполнила: Виктория Тарасова
+          </h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+
+        <div class="modal-body text-center">
+          <h1 id="hh"></h1>
+        </div>
+
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Закрыть
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./dist/main.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html>
+'><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Интеграция Bootstrap 5 в приложение с luxon. Этап 2","item":"https://vikisses.github.io/hugo_portfolio/webpack-lab_2/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Интеграция Bootstrap 5 в приложение с luxon. Этап 2","name":"Интеграция Bootstrap 5 в приложение с luxon. Этап 2","description":" Лабораторная работа: Интеграция Bootstrap 5 в приложение с luxon. Этап 2 1. Cкриншот с кодом html Код html:\n\u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html lang=\u0026#34;ru\u0026#34;\u0026gt; \u0026lt;head\u0026gt; \u0026lt;meta charset=\u0026#34;UTF-8\u0026#34;\u0026gt; \u0026lt;title\u0026gt;Bootstrap + Luxon\u0026lt;/title\u0026gt; \u0026lt;link href=\u0026#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34; \u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;div class=\u0026#34;container mt-5\u0026#34;\u0026gt; \u0026lt;div class=\u0026#34;row\u0026#34;\u0026gt; \u0026lt;div class=\u0026#34;col-2\u0026#34;\u0026gt;\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;col-8\u0026#34;\u0026gt; \u0026lt;button class=\u0026#34;btn btn-danger btn-lg w-100\u0026#34; data-bs-toggle=\u0026#34;modal\u0026#34; data-bs-target=\u0026#34;#timeModal\u0026#34; \u0026gt; Показать время \u0026lt;/button\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;col-2\u0026#34;\u0026gt;\u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;modal fade\u0026#34; id=\u0026#34;timeModal\u0026#34; tabindex=\u0026#34;-1\u0026#34;\u0026gt; \u0026lt;div class=\u0026#34;modal-dialog modal-dialog-centered\u0026#34;\u0026gt; \u0026lt;div class=\u0026#34;modal-content\u0026#34;\u0026gt; \u0026lt;div class=\u0026#34;modal-header\u0026#34;\u0026gt; \u0026lt;h5 class=\u0026#34;modal-title\u0026#34;\u0026gt; Выполнила: Виктория Тарасова \u0026lt;/h5\u0026gt; \u0026lt;button type=\u0026#34;button\u0026#34; class=\u0026#34;btn-close\u0026#34; data-bs-dismiss=\u0026#34;modal\u0026#34; \u0026gt;\u0026lt;/button\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;modal-body text-center\u0026#34;\u0026gt; \u0026lt;h1 id=\u0026#34;hh\u0026#34;\u0026gt;\u0026lt;/h1\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;modal-footer\u0026#34;\u0026gt; \u0026lt;button type=\u0026#34;button\u0026#34; class=\u0026#34;btn btn-secondary\u0026#34; data-bs-dismiss=\u0026#34;modal\u0026#34; \u0026gt; Закрыть \u0026lt;/button\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;script src=\u0026#34;./dist/main.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script src=\u0026#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\u0026#34;\u0026gt; \u0026lt;/script\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; ","keywords":[],"articleBody":" Лабораторная работа: Интеграция Bootstrap 5 в приложение с luxon. Этап 2 1. Cкриншот с кодом html Код html:\n\u003c!DOCTYPE html\u003e \u003chtml lang=\"ru\"\u003e \u003chead\u003e \u003cmeta charset=\"UTF-8\"\u003e \u003ctitle\u003eBootstrap + Luxon\u003c/title\u003e \u003clink href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" \u003e \u003c/head\u003e \u003cbody\u003e \u003cdiv class=\"container mt-5\"\u003e \u003cdiv class=\"row\"\u003e \u003cdiv class=\"col-2\"\u003e\u003c/div\u003e \u003cdiv class=\"col-8\"\u003e \u003cbutton class=\"btn btn-danger btn-lg w-100\" data-bs-toggle=\"modal\" data-bs-target=\"#timeModal\" \u003e Показать время \u003c/button\u003e \u003c/div\u003e \u003cdiv class=\"col-2\"\u003e\u003c/div\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"modal fade\" id=\"timeModal\" tabindex=\"-1\"\u003e \u003cdiv class=\"modal-dialog modal-dialog-centered\"\u003e \u003cdiv class=\"modal-content\"\u003e \u003cdiv class=\"modal-header\"\u003e \u003ch5 class=\"modal-title\"\u003e Выполнила: Виктория Тарасова \u003c/h5\u003e \u003cbutton type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" \u003e\u003c/button\u003e \u003c/div\u003e \u003cdiv class=\"modal-body text-center\"\u003e \u003ch1 id=\"hh\"\u003e\u003c/h1\u003e \u003c/div\u003e \u003cdiv class=\"modal-footer\"\u003e \u003cbutton type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\" \u003e Закрыть \u003c/button\u003e \u003c/div\u003e \u003c/div\u003e \u003c/div\u003e \u003c/div\u003e \u003cscript src=\"./dist/main.js\"\u003e\u003c/script\u003e \u003cscript src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\"\u003e \u003c/script\u003e \u003c/body\u003e \u003c/html\u003e 2. Внешний вид приложения с раскрытым окном 3. Последовательность выполненных действий. Была создана папка проекта и выполнена инициализация npm-проекта с помощью команды npm init -y. После этого была установлена библиотека Luxon командой npm i luxon, а также зависимости для сборки проекта: webpack, webpack-cli и serve.\nДалее была создана папка src, внутри которой был создан файл index.js. В этот файл был добавлен код с импортом библиотеки Luxon и выводом текущей даты и времени.\nПосле этого был создан файл index.html. В него была подключена библиотека Bootstrap 5 через CDN. С помощью Bootstrap была реализована структура страницы из трёх колонок в соотношении 2-8-2. В центральной колонке была размещена большая красная кнопка «Показать время».\nЗатем было добавлено модальное окно Bootstrap. В заголовке окна была указана моя фамилия и имя, а в основной части окна выводились текущие дата и время, полученные с помощью библиотеки Luxon. Также были реализованы два способа закрытия окна: с помощью крестика в правом верхнем углу и кнопки «Закрыть» в нижней части окна.\nПосле завершения разработки была выполнена сборка проекта командой npx webpack, в результате чего был создан файл dist/main.js. Затем проект был запущен локально с помощью команды npx serve ., после чего приложение стало доступно в браузере по адресу http://localhost:3000/.\n","wordCount":"309","inLanguage":"en","datePublished":"2026-05-15T00:00:00Z","dateModified":"2026-05-15T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://vikisses.github.io/hugo_portfolio/webpack-lab_2/"},"publisher":{"@type":"Organization","name":"Portfolio","logo":{"@type":"ImageObject","url":"https://vikisses.github.io/hugo_portfolio/favicon.ico"}}}</script></head><body id=top><header class=header><nav class=nav><div class=logo><a href=https://vikisses.github.io/hugo_portfolio/ accesskey=h title="Portfolio (Alt + H)">Portfolio</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://vikisses.github.io/hugo_portfolio/about/ title="Обо мне"><span>Обо мне</span></a></li><li><a href=https://vikisses.github.io/hugo_portfolio/projects/ title=Проекты><span>Проекты</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://vikisses.github.io/hugo_portfolio/>Home</a></div><h1 class="post-title entry-hint-parent">Интеграция Bootstrap 5 в приложение с luxon. Этап 2</h1><div class=post-meta><span title='2026-05-15 00:00:00 +0000 UTC'>May 15, 2026</span>&nbsp;·&nbsp;<span>2 min</span></div></header><div class=post-content><hr><h1 id=лабораторная-работа-интеграция-bootstrap-5-в-приложение-с-luxon-этап-2>Лабораторная работа: Интеграция Bootstrap 5 в приложение с luxon. Этап 2<a hidden class=anchor aria-hidden=true href=#лабораторная-работа-интеграция-bootstrap-5-в-приложение-с-luxon-этап-2>#</a></h1><hr><h2 id=1-cкриншот-с-кодом-html>1. Cкриншот с кодом html<a hidden class=anchor aria-hidden=true href=#1-cкриншот-с-кодом-html>#</a></h2><p>Код html:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;ru&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;UTF-8&#34;</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>title</span>&gt;Bootstrap + Luxon&lt;/<span style=color:#f92672>title</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>link</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;stylesheet&#34;</span>
+</span></span><span style=display:flex><span>  &gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;container mt-5&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-2&#34;</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-8&#34;</span>&gt;
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>button</span>
+</span></span><span style=display:flex><span>          <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;btn btn-danger btn-lg w-100&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#a6e22e>data-bs-toggle</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;modal&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#a6e22e>data-bs-target</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;#timeModal&#34;</span>
+</span></span><span style=display:flex><span>        &gt;
+</span></span><span style=display:flex><span>          Показать время
+</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>button</span>&gt;
+</span></span><span style=display:flex><span>      &lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-2&#34;</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;modal fade&#34;</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;timeModal&#34;</span> <span style=color:#a6e22e>tabindex</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;-1&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;modal-dialog modal-dialog-centered&#34;</span>&gt;
+</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;modal-content&#34;</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;modal-header&#34;</span>&gt;
+</span></span><span style=display:flex><span>          &lt;<span style=color:#f92672>h5</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;modal-title&#34;</span>&gt;
+</span></span><span style=display:flex><span>            Выполнила: Виктория Тарасова
+</span></span><span style=display:flex><span>          &lt;/<span style=color:#f92672>h5</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>          &lt;<span style=color:#f92672>button</span>
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;button&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;btn-close&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>data-bs-dismiss</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;modal&#34;</span>
+</span></span><span style=display:flex><span>          &gt;&lt;/<span style=color:#f92672>button</span>&gt;
+</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;modal-body text-center&#34;</span>&gt;
+</span></span><span style=display:flex><span>          &lt;<span style=color:#f92672>h1</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;hh&#34;</span>&gt;&lt;/<span style=color:#f92672>h1</span>&gt;
+</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;modal-footer&#34;</span>&gt;
+</span></span><span style=display:flex><span>          &lt;<span style=color:#f92672>button</span>
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;button&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;btn btn-secondary&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>data-bs-dismiss</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;modal&#34;</span>
+</span></span><span style=display:flex><span>          &gt;
+</span></span><span style=display:flex><span>            Закрыть
+</span></span><span style=display:flex><span>          &lt;/<span style=color:#f92672>button</span>&gt;
+</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      &lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;./dist/main.js&#34;</span>&gt;&lt;/<span style=color:#f92672>script</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>script</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js&#34;</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>script</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
+</span></span></code></pre></div><p><img alt="Код html" loading=lazy src=https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/web_2_htmlcode.png></p><hr><h2 id=2-внешний-вид-приложения-с-раскрытым-окном>2. Внешний вид приложения с раскрытым окном<a hidden class=anchor aria-hidden=true href=#2-внешний-вид-приложения-с-раскрытым-окном>#</a></h2><p><img alt="Внешний вид приложения" loading=lazy src=https://github.com/vikisses/hugo_portfolio/blob/gh-pages/images/web_2_front_side.png></p><hr><h2 id=3-последовательность-выполненных-действий>3. Последовательность выполненных действий.<a hidden class=anchor aria-hidden=true href=#3-последовательность-выполненных-действий>#</a></h2><p>Была создана папка проекта и выполнена инициализация npm-проекта с помощью команды npm init -y. После этого была установлена библиотека Luxon командой npm i luxon, а также зависимости для сборки проекта: webpack, webpack-cli и serve.</p><p>Далее была создана папка src, внутри которой был создан файл index.js. В этот файл был добавлен код с импортом библиотеки Luxon и выводом текущей даты и времени.</p><p>После этого был создан файл index.html. В него была подключена библиотека Bootstrap 5 через CDN. С помощью Bootstrap была реализована структура страницы из трёх колонок в соотношении 2-8-2. В центральной колонке была размещена большая красная кнопка «Показать время».</p><p>Затем было добавлено модальное окно Bootstrap. В заголовке окна была указана моя фамилия и имя, а в основной части окна выводились текущие дата и время, полученные с помощью библиотеки Luxon. Также были реализованы два способа закрытия окна: с помощью крестика в правом верхнем углу и кнопки «Закрыть» в нижней части окна.</p><p>После завершения разработки была выполнена сборка проекта командой npx webpack, в результате чего был создан файл dist/main.js. Затем проект был запущен локально с помощью команды npx serve ., после чего приложение стало доступно в браузере по адресу http://localhost:3000/.</p><hr></div><footer class=post-footer><ul class=post-tags></ul></footer></article></main><footer class=footer><span>&copy; 2026 <a href=https://vikisses.github.io/hugo_portfolio/>Portfolio</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
