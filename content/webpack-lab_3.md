@@ -4,10 +4,6 @@ date: 2026-05-15
 draft: false
 ---
 
----
-# Интеграция Bootstrap 5 в приложение с luxon. Этап 3
----
-
 ## 1. Cсылка на репозиторий с исходными файлами
 
 Ссылка на репозиторий - https://github.com/vikisses/vite-bootstrap-luxon
