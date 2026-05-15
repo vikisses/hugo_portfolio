@@ -18,3 +18,6 @@ draft: false
 
 ## 5. [Создание проекта с использованием Webpack](/hugo_portfolio/webpack-lab/)
 --------
+
+## 6. [Интеграция Bootstrap 5 в приложение с luxon. Этап 2](/hugo_portfolio/webpack-lab_2/)
+--------
