@@ -21,3 +21,6 @@ draft: false
 
 ## 6. [Интеграция Bootstrap 5 в приложение с luxon. Этап 2](/hugo_portfolio/webpack-lab_2/)
 --------
+
+## 7. [Интеграция Bootstrap 5 в приложение с luxon. Этап 3](/hugo_portfolio/webpack-lab_3/)
+--------
